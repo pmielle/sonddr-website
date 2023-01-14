@@ -1,0 +1,8 @@
+#top-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--top-navigation-height);
+    background: linear-gradient(to bottom, var(--shadow-color), transparent)
+}

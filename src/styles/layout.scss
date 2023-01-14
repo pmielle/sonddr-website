@@ -38,12 +38,15 @@
         gap: var(--spacing);
     }
 
-    &.large-gap {
-        gap: var(--large-spacing);
-    }
-
     &.small-gap {
         gap: var(--small-spacing);
     }
+
+    &.very-small-gap {
+        gap: var(--very-small-spacing);
+    }
 }
 
+.spacer {
+    flex: 1;
+}

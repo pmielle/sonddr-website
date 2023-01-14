@@ -1,9 +1,21 @@
 :root {
-    --spacing: 16px;
-    --large-spacing: calc(2 * var(var(--spacing)));
-    --small-spacing: calc(1/3 * var(--spacing));
+    --spacing: 32px;
+    --small-spacing: 16px;
+    --very-small-spacing: 5px;
 }
 
 .gutter {
     padding: 0 var(--spacing);
+}
+
+.small-gutter {
+    padding: 0 var(--small-spacing);
+}
+
+.very-small-gutter {
+    padding: 0 var(--very-small-spacing);
+}
+
+.view {
+    padding-top: var(--top-navigation-height);
 }

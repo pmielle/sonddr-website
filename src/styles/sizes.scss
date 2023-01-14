@@ -2,4 +2,27 @@
     --icon-size: 24px;
     --large-icon-size: 32px;
     --fab-size: 60px;
+    --top-navigation-height: 65px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    height: var(--icon-size);
+
+    img {
+        height: 100%;
+    }
+
+    &.large {
+        height: var(--large-icon-size);
+    }
+}
+
+.view {
+    min-height: 100vh;
 }
