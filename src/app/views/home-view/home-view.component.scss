@@ -1,5 +1,5 @@
 #above-the-fold {
-    --additional-offset: 50px;
+    position: relative;
     height: 100vh;
     width: 100%;
     background: var(--primary-color);
@@ -9,8 +9,8 @@
         position: relative;
         width: 500px;
         height: 100%;
-        padding-bottom: calc(250px - var(--additional-offset));  // more towards the bottom
         padding-top: var(--top-navigation-height);
+        padding-bottom: 200px;
 
         #call-to-actions {
             // ...
@@ -28,14 +28,22 @@
                 cursor: pointer;
             }
         }
+    }
 
-        #mockup {
-            position: absolute;
-            bottom: 0px;
-            left: 50%;
-            transform: translate(-50%, 0px);
-            height: 250px;
-        }
+    .bottom-hscroll {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px; 
+        background: green;
+    }
+
+    .mockup {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+        height: 250px;
     }
 }
 
@@ -46,12 +54,10 @@
         .left-content {
             width: 100%;
         }
-        
-    }
-}
 
-@media only screen and (max-height: 700px) {
-    #above-the-fold {
-        --additional-offset: 0px;
+        .mockup {
+            left: var(--spacing);
+        }
+        
     }
 }
