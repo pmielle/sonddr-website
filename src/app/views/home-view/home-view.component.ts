@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-view.component.scss']
 })
 export class HomeViewComponent {
+
+  goalIds = Array.from(Array(17).keys()).map(x => x + 1);
+
   onIosClick() {
     console.log("ios click...");
   }

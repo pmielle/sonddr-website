@@ -19,8 +19,10 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-hscroll">
-            <p>toto</p>
+        <div class="bottom-hscroll no-scrollbar">
+            <div class="goal" *ngFor="let goalId of goalIds">
+                <img [src]="'/assets/goals/E-WEB-Goal-'+(goalId < 10 ? '0' : '')+goalId+'.png'">
+            </div>
         </div>
         <img class="mockup" src="/assets/home-mockup.png">
     </div>
