@@ -1,11 +1,16 @@
 #above-the-fold {
+    --additional-offset: 50px;
     height: 100vh;
     width: 100%;
     background: var(--primary-color);
     padding-left: 100px;
 
     .left-content {
+        position: relative;
         width: 500px;
+        height: 100%;
+        padding-bottom: calc(250px - var(--additional-offset));  // more towards the bottom
+        padding-top: var(--top-navigation-height);
 
         #call-to-actions {
             // ...
@@ -23,6 +28,14 @@
                 cursor: pointer;
             }
         }
+
+        #mockup {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%, 0px);
+            height: 250px;
+        }
     }
 }
 
@@ -34,5 +47,11 @@
             width: 100%;
         }
         
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    #above-the-fold {
+        --additional-offset: 0px;
     }
 }
