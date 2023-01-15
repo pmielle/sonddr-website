@@ -35,9 +35,10 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 150px; 
+        // height is defined in html because needs sync with js
         overflow: auto;
         white-space: nowrap;
+        pointer-events: none;
 
         .goal {
             display: inline-block;
@@ -53,7 +54,7 @@
     .mockup {
         position: absolute;
         bottom: 0;
-        left: 100px;
+        left: 150px;
         height: 250px;
     }
 }
@@ -64,10 +65,11 @@
 
         .left-content {
             width: 100%;
+            padding-bottom: 150px;
         }
 
         .mockup {
-            left: var(--spacing);
+            display: none;
         }
         
     }

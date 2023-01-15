@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-hscroll no-scrollbar">
+        <div class="bottom-hscroll no-scrollbar" [style.height]="this.goalIconWidth + 'px'" #autoscroll>
             <div class="goal" *ngFor="let goalId of goalIds">
                 <img [src]="'/assets/goals/E-WEB-Goal-'+(goalId < 10 ? '0' : '')+goalId+'.png'">
             </div>
