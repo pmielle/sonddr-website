@@ -16,6 +16,10 @@
     padding: 0 var(--very-small-spacing);
 }
 
-.view {
+.view:not(.no-top-padding) {
     padding-top: var(--top-navigation-height);
+}
+
+.no-margin {
+    margin: 0;
 }

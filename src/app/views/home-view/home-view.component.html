@@ -1,3 +1,26 @@
-<div class="view">
-    <p>home-view works!</p>
+<div class="view no-top-padding flex column align-start">
+    <div id="above-the-fold" class="flex column align-start">
+        <div class="left-content flex column align-start gap">
+            <h1 class="no-margin">Sonddr is a place to share and contribute to each other ideas to make the world a little (or a lot) better.</h1>
+            <div id="call-to-actions" class="flex row gap">
+                <button class="rounded" mat-ripple (click)="onShareClick()">Share an idea</button>
+                <div class="flex column align-start very-small-gap">
+                    <span class="caption">or get the app:</span>
+                    <div class="flex small-gap">
+                        <div class="icon" mat-ripple [matRippleUnbounded]="true" [matRippleCentered]="true" 
+                        matRippleColor="var(--ripple-color)" (click)="onIosClick()">
+                            <img src="/assets/apple-logo-white.png">
+                        </div>
+                        <div class="icon" mat-ripple [matRippleUnbounded]="true" [matRippleCentered]="true" 
+                        matRippleColor="var(--ripple-color)" (click)="onAndroidClick()">
+                            <img src="/assets/android-logo-white.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="steps">
+        <p>steps...</p>
+    </div>
 </div>

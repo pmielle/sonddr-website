@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-view.component.scss']
 })
 export class HomeViewComponent {
-
+  onIosClick() {
+    console.log("ios click...");
+  }
+  onAndroidClick() {
+    console.log("android click...");
+  }
+  onShareClick() {
+    console.log("share click...");
+  }
 }
