@@ -97,6 +97,13 @@
     }
 }
 
+#sub-footer {
+    width: 100%;
+    background-color: var(--darker-background-color);
+
+    p { opacity: 0.5;}
+}
+
 
 /* responsive */
 /* ---------------------------------------------- */
