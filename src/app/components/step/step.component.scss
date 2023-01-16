@@ -1,0 +1,27 @@
+#container {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 10px;
+
+    .icon {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .n {
+        font-weight: bold;
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .title {
+        font-weight: bold;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .body {
+        grid-row: 3;
+        grid-column: 2;
+    }
+}

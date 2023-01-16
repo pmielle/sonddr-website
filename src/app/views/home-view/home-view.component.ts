@@ -14,7 +14,7 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
   autoscrollContainer?: HTMLElement;
   @ViewChild('autoscroll') autoscrollContainerRef?: ElementRef;
   goalIds = Array.from(Array(17).keys()).map(x => x + 1);
-
+  
 
   // lifecycle
   // --------------------------------------------

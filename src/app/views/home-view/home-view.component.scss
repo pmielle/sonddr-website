@@ -59,6 +59,16 @@
     }
 }
 
+#steps {
+    padding: 128px var(--spacing); 
+    gap: 64px;
+    background: linear-gradient(to bottom, var(--background-color), var(--darker-background-color));
+
+    app-step { flex: 1; }
+}
+
+/* responsive */
+/* ---------------------------------------------- */
 @media only screen and (max-width: 700px) {
     #above-the-fold {
         padding: 0 var(--spacing);
@@ -71,6 +81,9 @@
         .mockup {
             display: none;
         }
-        
+    }
+
+    #steps {
+        flex-direction: column;
     }
 }
