@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { PopupService } from 'src/app/services/popup.service';
 
 @Component({
   selector: 'app-home-view',
@@ -14,11 +15,14 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
   autoscrollContainer?: HTMLElement;
   @ViewChild('autoscroll') autoscrollContainerRef?: ElementRef;
   goalIds = Array.from(Array(17).keys()).map(x => x + 1);
-  email?: String;
+  email?: string;
   
 
   // lifecycle
   // --------------------------------------------
+  constructor(private popup: PopupService) {
+  }
+
   ngOnInit(): void {
   }
   
@@ -49,7 +53,7 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
       console.error("missing email");
       return;
     }
-    console.log("newsletter click...");
+    this.popup.notImplemented();
     this.email = undefined;
   }
 
@@ -65,12 +69,12 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
   }
 
   onIosClick() {
-    console.log("ios click...");
+    this.popup.notImplemented();
   }
   onAndroidClick() {
-    console.log("android click...");
+    this.popup.notImplemented();
   }
   onShareClick() {
-    console.log("share click...");
+    this.popup.notImplemented();
   }
 }

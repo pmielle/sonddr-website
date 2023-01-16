@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./fab.component.scss']
 })
 export class FabComponent {
-  @Input('icon') icon!: String;
-  @Input('color') color!: String;
+  @Input('icon') icon!: string;
+  @Input('color') color!: string;
 }

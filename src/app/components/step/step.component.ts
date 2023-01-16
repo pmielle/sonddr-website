@@ -6,9 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./step.component.scss']
 })
 export class StepComponent {
-  @Input('color') color!: String;
-  @Input('n') n!: String;
-  @Input('icon') icon!: String;
-  @Input('title') title!: String;
-  @Input('body') body!: String;
+  @Input('color') color!: string;
+  @Input('n') n!: string;
+  @Input('icon') icon!: string;
+  @Input('title') title!: string;
+  @Input('body') body!: string;
 }

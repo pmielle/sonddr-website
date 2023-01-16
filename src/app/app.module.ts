@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { FabComponent } from './components/fab/fab.component';
 import { FooterColumnComponent } from './components/footer-column/footer-column.component';
 import { FormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { FormsModule } from '@angular/forms';
     MatRippleModule,
     MatIconModule,
     FormsModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
