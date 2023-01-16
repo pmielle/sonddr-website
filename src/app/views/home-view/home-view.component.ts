@@ -14,6 +14,7 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
   autoscrollContainer?: HTMLElement;
   @ViewChild('autoscroll') autoscrollContainerRef?: ElementRef;
   goalIds = Array.from(Array(17).keys()).map(x => x + 1);
+  email?: String;
   
 
   // lifecycle
@@ -41,6 +42,15 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
       if (rewinded) { return; }
       this.autoscrollContainer?.scrollBy({left: this.goalIconWidth, behavior: "smooth"});
     }, this.autoscrollSeconds * 1000);
+  }
+
+  onNewletterClick() {
+    if (!this.email) {
+      console.error("missing email");
+      return;
+    }
+    console.log("newsletter click...");
+    this.email = undefined;
   }
 
   rewindAutoscrollIfNeeded(): Boolean {

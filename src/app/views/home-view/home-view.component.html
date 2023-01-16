@@ -42,8 +42,8 @@
         <div class="newsletter flex column align-start small-gap">
             <h1 class="no-margin">Sonddr is still a work in progress.</h1>
             <div class="input-container flex gap">
-                <input type="email" placeholder="Recieve updates by email">
-                <app-fab color="var(--primary-color)" icon="send"></app-fab>
+                <input type="email" placeholder="Recieve updates by email" [(ngModel)]="email">
+                <app-fab color="var(--primary-color)" icon="send" (click)="onNewletterClick()"></app-fab>
             </div>
         </div>
         <app-footer-column>
@@ -65,7 +65,7 @@
         </app-footer-column>
     </div>
     <div id="sub-footer" class="flex justify-end gutter">
-        <p>Copyright © 2023 Paul Mielle</p>
+        <p class="caption">Copyright © 2023 Paul Mielle</p>
     </div>
 
 </div>

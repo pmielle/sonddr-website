@@ -9,6 +9,7 @@ import { StepComponent } from './components/step/step.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FabComponent } from './components/fab/fab.component';
 import { FooterColumnComponent } from './components/footer-column/footer-column.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FooterColumnComponent } from './components/footer-column/footer-column.
     BrowserAnimationsModule,
     MatRippleModule,
     MatIconModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
