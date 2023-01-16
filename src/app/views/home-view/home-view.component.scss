@@ -60,6 +60,7 @@
 }
 
 #steps {
+    width: 100%;
     padding: 128px var(--spacing); 
     gap: 64px;
     background: linear-gradient(to bottom, var(--background-color), var(--darker-background-color));
