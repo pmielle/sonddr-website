@@ -13,7 +13,7 @@ jobs:
     - name: All things angular
       uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
       with:
-        github_access_token: ${{ secrets.GH_ACCESS_TOKEN }}
+        github_access_token: ${{ secrets.GITHUB_TOKEN }}
         base_href: /sonddr-website/
         deploy_branch: gh-pages
         angular_dist_build_folder: dist/sonddr-website
