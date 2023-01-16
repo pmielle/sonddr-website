@@ -9,10 +9,10 @@ export class PopupService {
   constructor(private snack: MatSnackBar) { }
 
   error(message: string) {
-    this.snack.open(message, undefined, { duration: 5000 });
+    this.snack.open(message, "Dismiss", { duration: 5000, horizontalPosition: 'start'});
   }
 
   notImplemented() {
-    this.error("🤧 not implemented yet");
+    this.error("🤧 Not implemented yet");
   }
 }

@@ -20,7 +20,7 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
 
   // lifecycle
   // --------------------------------------------
-  constructor(private popup: PopupService) {
+  constructor(public popup: PopupService) {
   }
 
   ngOnInit(): void {
