@@ -67,6 +67,29 @@
     app-step { flex: 1; }
 }
 
+#footer {
+    width: 100%; 
+    padding: 128px var(--spacing);
+    background: var(--darker-background-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    .newsletter {
+
+        .input-container {
+            width: 100%;
+
+            input {
+                flex: 1;
+            }
+            app-fab { 
+                transform: rotate(-45deg); 
+            }
+        }
+    }
+}
+
+
 /* responsive */
 /* ---------------------------------------------- */
 @media only screen and (max-width: 700px) {

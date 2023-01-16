@@ -7,13 +7,15 @@ import { HomeViewComponent } from './views/home-view/home-view.component';
 import { MatRippleModule } from '@angular/material/core';
 import { StepComponent } from './components/step/step.component';
 import { MatIconModule } from '@angular/material/icon';
+import { FabComponent } from './components/fab/fab.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeViewComponent,
-    StepComponent
+    StepComponent,
+    FabComponent
   ],
   imports: [
     BrowserModule,
