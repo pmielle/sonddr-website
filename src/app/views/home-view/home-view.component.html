@@ -45,7 +45,8 @@
         <div class="newsletter flex column align-start small-gap">
             <h1 class="no-margin">Sonddr is still a work in progress.</h1>
             <div class="input-container flex gap">
-                <input type="email" placeholder="Recieve updates by email" [(ngModel)]="email">
+                <input type="email" placeholder="Recieve updates by email" [(ngModel)]="email" 
+                [class.error]="this.emailError" (focus)="this.emailError = false">
                 <app-fab color="var(--primary-color)" icon="send" (click)="onNewletterClick()"></app-fab>
             </div>
         </div>

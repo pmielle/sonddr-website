@@ -16,6 +16,7 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
   @ViewChild('autoscroll') autoscrollContainerRef?: ElementRef;
   goalIds = Array.from(Array(17).keys()).map(x => x + 1);
   email?: string;
+  emailError = false;
   
 
   // lifecycle
@@ -51,6 +52,7 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
   onNewletterClick() {
     if (!this.email) {
       console.error("missing email");
+      this.emailError = true;
       return;
     }
     this.popup.notImplemented();

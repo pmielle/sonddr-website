@@ -13,6 +13,10 @@ button {
 input {
     color: inherit;
     font-size: inherit;
+
+    &.error::placeholder {
+        color: red;
+    }
 }
 
 .caption {

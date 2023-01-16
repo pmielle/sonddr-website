@@ -6,6 +6,10 @@ button {
 input {
     border: none;
     outline: none;
+
+    &.error {
+        border-bottom: 1px solid red;
+    }
 }
 
 .rounded {
