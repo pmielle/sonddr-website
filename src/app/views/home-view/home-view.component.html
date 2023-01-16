@@ -9,12 +9,13 @@
                 <div class="flex column align-start very-small-gap">
                     <span class="caption">or get the app:</span>
                     <div class="flex small-gap">
-                        <div class="icon" mat-ripple [matRippleUnbounded]="true" [matRippleCentered]="true" 
-                        matRippleColor="var(--ripple-color)" (click)="onIosClick()">
+                        <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleUnbounded]="true" 
+                        [matRippleCentered]="true" matRippleColor="var(--ripple-color)" (click)="onIosClick()">
                             <img src="/assets/apple-logo-white.png">
                         </div>
-                        <div class="icon" mat-ripple [matRippleUnbounded]="true" [matRippleCentered]="true" 
-                        matRippleColor="var(--ripple-color)" (click)="onAndroidClick()">
+                        <div class="icon" mat-ripple [matRippleRadius]="24" 
+                        [matRippleUnbounded]="true" [matRippleCentered]="true" matRippleColor="var(--ripple-color)" 
+                        (click)="onAndroidClick()">
                             <img src="/assets/android-logo-white.png">
                         </div>
                     </div>
@@ -45,7 +46,23 @@
                 <app-fab color="var(--primary-color)" icon="send"></app-fab>
             </div>
         </div>
-        <!-- ... -->
+        <app-footer-column>
+            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" matRippleColor="var(--ripple-color)">Home</span>
+            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" matRippleColor="var(--ripple-color)">Ideas</span>
+            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" matRippleColor="var(--ripple-color)">Blog</span>
+            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" matRippleColor="var(--ripple-color)">About</span>
+        </app-footer-column>
+        <app-footer-column>
+            <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" matRippleColor="var(--ripple-color)">
+                <img src="/assets/github-logo-white.png">
+            </div>
+            <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" matRippleColor="var(--ripple-color)">
+                <img src="/assets/twitter-logo-white.png">
+            </div>
+            <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" matRippleColor="var(--ripple-color)">
+                <img src="/assets/instagram-logo-white.png">
+            </div>
+        </app-footer-column>
     </div>
 
 

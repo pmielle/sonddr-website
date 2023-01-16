@@ -8,6 +8,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { StepComponent } from './components/step/step.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FabComponent } from './components/fab/fab.component';
+import { FooterColumnComponent } from './components/footer-column/footer-column.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FabComponent } from './components/fab/fab.component';
     AppComponent,
     HomeViewComponent,
     StepComponent,
-    FabComponent
+    FabComponent,
+    FooterColumnComponent
   ],
   imports: [
     BrowserModule,
