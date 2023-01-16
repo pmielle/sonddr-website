@@ -116,4 +116,13 @@
     #steps {
         flex-direction: column;
     }
+
+    #footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 100px 0;
+
+        .newsletter {
+            grid-column: 1 / span 2;
+        }
+    }
 }
