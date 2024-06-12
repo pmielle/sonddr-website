@@ -3,18 +3,18 @@
 
     <div id="above-the-fold" class="flex column align-start">
         <div class="left-content flex column align-start gap">
-            <h1 class="no-margin">Sonddr is a place to share and contribute to each other ideas to make the world a little (or a lot) better.</h1>
+            <h1 class="no-margin">Sonddr is a place to share and contribute to each other non-profit ideas to make the world a little (or a lot) better.</h1>
             <div id="call-to-actions" class="flex row gap">
                 <button class="rounded" mat-ripple (click)="onShareClick()">Share an idea</button>
                 <div class="flex column align-start very-small-gap">
                     <span class="caption">or get the app:</span>
                     <div class="flex small-gap">
-                        <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleUnbounded]="true" 
+                        <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleUnbounded]="true"
                         [matRippleCentered]="true" matRippleColor="var(--ripple-color)" (click)="onIosClick()">
                             <img src="/assets/apple-logo-white.png">
                         </div>
-                        <div class="icon" mat-ripple [matRippleRadius]="24" 
-                        [matRippleUnbounded]="true" [matRippleCentered]="true" matRippleColor="var(--ripple-color)" 
+                        <div class="icon" mat-ripple [matRippleRadius]="24"
+                        [matRippleUnbounded]="true" [matRippleCentered]="true" matRippleColor="var(--ripple-color)"
                         (click)="onAndroidClick()">
                             <img src="/assets/android-logo-white.png">
                         </div>
@@ -32,11 +32,11 @@
 
 
     <div id="steps" class="flex align-start">
-        <app-step n="1" color="var(--primary-color)" icon="cloud_upload" title="Share an idea" 
+        <app-step n="1" color="var(--primary-color)" icon="cloud_upload" title="Share an idea"
         body="Don’t let that 1am seemingly brilliant idea die overnight, share it! It will be realised if it’s good, by you or by someone else."></app-step>
-        <app-step n="2" color="var(--primary-color)" icon="forum" title="Get and send feedback" 
+        <app-step n="2" color="var(--primary-color)" icon="forum" title="Get and send feedback"
         body="Discuss and rate each other ideas: help turn a somewhat interesting thought into a solid project ready for the real world."></app-step>
-        <app-step n="3" color="var(--green-color)" icon="handshake" title="Organise and make things happen" 
+        <app-step n="3" color="var(--green-color)" icon="handshake" title="Organise and make things happen"
         body="Get in touch with like-minded people and bring an idea to life. Leverage human and financial resource to make a difference."></app-step>
     </div>
 
@@ -45,44 +45,44 @@
         <div class="newsletter flex column align-start small-gap">
             <h1 class="no-margin">Sonddr is still a work in progress.</h1>
             <div class="input-container flex gap">
-                <input type="email" placeholder="Recieve updates by email" [(ngModel)]="email" 
+                <input type="email" placeholder="Recieve updates by email" [(ngModel)]="email"
                 [class.error]="this.emailError" (focus)="this.emailError = false">
                 <app-fab color="var(--primary-color)" icon="send" (click)="onNewletterClick()"></app-fab>
             </div>
         </div>
         <app-footer-column>
-            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" 
+            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true"
             matRippleColor="var(--ripple-color)" (click)="this.popup.notImplemented();">
                 Home
             </span>
-            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" 
+            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true"
             matRippleColor="var(--ripple-color)" (click)="this.popup.notImplemented();">
                 Ideas
             </span>
-            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" 
+            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true"
             matRippleColor="var(--ripple-color)" (click)="this.popup.notImplemented();">
                 Blog
             </span>
-            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" 
+            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true"
             matRippleColor="var(--ripple-color)" (click)="this.popup.notImplemented();">
                 About
             </span>
         </app-footer-column>
         <app-footer-column>
-            <a href="https://github.com/pmielle/sonddr-ios" target="_blank">
-                <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" 
+            <a href="https://github.com/pmielle/sonddr" target="_blank">
+                <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true"
                 matRippleColor="var(--ripple-color)">
                     <img src="/assets/github-logo-white.png">
                 </div>
             </a>
             <a href="https://twitter.com/_sonddr" target="_blank">
-                <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" 
+                <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true"
                 matRippleColor="var(--ripple-color)">
                     <img src="/assets/twitter-logo-white.png">
                 </div>
             </a>
             <a href="https://www.instagram.com/_sonddr/" target="_blank">
-                <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true" 
+                <div class="icon" mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true"
                 matRippleColor="var(--ripple-color)">
                     <img src="/assets/instagram-logo-white.png">
                 </div>

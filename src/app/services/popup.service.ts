@@ -13,6 +13,6 @@ export class PopupService {
   }
 
   notImplemented() {
-    this.error("🤧 Not implemented yet");
+    this.error("🤧 Coming soon!");
   }
 }
