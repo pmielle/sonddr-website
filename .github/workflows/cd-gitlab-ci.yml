@@ -9,9 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: All things angular
-      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
       with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
         deploy_branch: gh-pages
