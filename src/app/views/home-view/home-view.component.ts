@@ -79,6 +79,6 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
   }
 
   goToSonddr() {
-    this.router.navigateByUrl("https://sonddr.com");
+    window.location.href = "https://sonddr.com";
   }
 }
