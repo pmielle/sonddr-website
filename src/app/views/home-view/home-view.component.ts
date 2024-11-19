@@ -78,7 +78,7 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
     this.popup.notImplemented();
   }
 
-  toGoSonddr() {
+  goToSonddr() {
     this.router.navigateByUrl("https://sonddr.com");
   }
 }
