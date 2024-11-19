@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { PopupService } from 'src/app/services/popup.service';
 
 @Component({
@@ -17,16 +18,16 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
   goalIds = Array.from(Array(17).keys()).map(x => x + 1);
   email?: string;
   emailError = false;
-  
+
 
   // lifecycle
   // --------------------------------------------
-  constructor(public popup: PopupService) {
+  constructor(public popup: PopupService, public router: Router) {
   }
 
   ngOnInit(): void {
   }
-  
+
   ngAfterViewInit(): void {
     this.initAutoscroll();
   }
@@ -76,7 +77,8 @@ export class HomeViewComponent implements OnInit, AfterViewInit {
   onAndroidClick() {
     this.popup.notImplemented();
   }
-  onShareClick() {
-    this.popup.notImplemented();
+
+  toGoSonddr() {
+    this.router.navigateByUrl("https://sonddr.com");
   }
 }

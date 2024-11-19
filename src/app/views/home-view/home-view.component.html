@@ -5,7 +5,7 @@
         <div class="left-content flex column align-start gap">
             <h1 class="no-margin">Sonddr is a place to share and contribute to each other nonprofit ideas to make the world a little (or a lot) better.</h1>
             <div id="call-to-actions" class="flex row gap">
-                <button class="rounded" mat-ripple (click)="onShareClick()">Share an idea</button>
+                <button class="rounded" mat-ripple (click)="goToSonddr()">Share an idea</button>
                 <div class="flex column align-start very-small-gap">
                     <span class="caption">or get the app:</span>
                     <div class="flex small-gap">
@@ -56,17 +56,14 @@
                 Home
             </span>
             <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true"
-            matRippleColor="var(--ripple-color)" (click)="this.popup.notImplemented();">
+            matRippleColor="var(--ripple-color)" (click)="goToSonddr()">
                 Ideas
             </span>
             <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true"
             matRippleColor="var(--ripple-color)" (click)="this.popup.notImplemented();">
                 Blog
             </span>
-            <span mat-ripple [matRippleRadius]="24" [matRippleCentered]="true" [matRippleUnbounded]="true"
-            matRippleColor="var(--ripple-color)" (click)="this.popup.notImplemented();">
-                About
-            </span>
+            <span>About</span>
         </app-footer-column>
         <app-footer-column>
             <a href="https://github.com/pmielle/sonddr" target="_blank">
@@ -90,7 +87,7 @@
         </app-footer-column>
     </div>
     <div id="sub-footer" class="flex justify-end gutter">
-        <p class="caption">Copyright © 2023 Paul Mielle</p>
+        <p class="caption">Copyright © 2024 Paul Mielle</p>
     </div>
 
 </div>
